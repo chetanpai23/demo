@@ -1,42 +1,12 @@
 {
-    "configReport1": {
-        "tgwConfig": {
-            "items": [
-						{"name": "abc",
-						 "value": "123"
-						}
-					 ]
-        },
-        "swapConfig": {
-            "items": [
-						{"name": "abc",
-						 "value": "123"
-						}
-					 ]
-        },
-        "ttuConfig": {
-            "items": [
-						{"name": "abc",
-						 "value": "123"
-						}
-					 ]
-        }
-    },
-    ".metaData": {
-        "tgwConfig": {
-            "items": "SEQUENCE OF:>=1:<=1024 configItem"
-        },
-        "swapConfig": {
-            "items": "SEQUENCE OF:>=1:<=1024 configItem"
-        },
-        "ttuConfig": {
-            "items": "SEQUENCE OF:>=1:<=1024 configItem"
-        },
-        "ttuConfig.optional": true,
-     "configItem" :{
-      "name":"OCTET STRING:<=127",
-      "value":"OCTET STRING:<=255"
-   }
-    },
-    ".metaDataName": "2_3_ConfigReport1"
+  "serviceSpecificData": {
+    "geofenceId": 1,
+    "geofenceTriggerType": "inbound"
+  },
+  ".metaData": {
+    "geofenceId": "INTEGER:<=4294967295",
+    "geofenceTriggerType": "GeofenceTriggerType",
+    "GeofenceTriggerType": "ENUMARATED:['inbound','outbound','arrived']"
+  },
+  ".metaDataName": "11_2_ServiceSpecificData"
 }
