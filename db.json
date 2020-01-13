@@ -1,12 +1,14 @@
 {
-  "serviceSpecificData": {
-    "geofenceId": 1,
-    "geofenceTriggerType": "inbound"
-  },
-  ".metaData": {
-    "geofenceId": "INTEGER:<=4294967295",
-    "geofenceTriggerType": "GeofenceTriggerType",
-    "GeofenceTriggerType": "ENUMARATED:['inbound','outbound','arrived']"
-  },
-  ".metaDataName": "11_2_ServiceSpecificData"
+  "posts": [
+    { "id": 1, "title": "Post 1" },
+    { "id": 2, "title": "Post 2" },
+    { "id": 3, "title": "Post 3" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
